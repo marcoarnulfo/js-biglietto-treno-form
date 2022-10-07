@@ -14,45 +14,28 @@ const basePrice = 0.21;
 
 const discount = 0.2
 
-//const ticketNoDiscount = kmDaPercorrere * basePrice
-
-//const nomeUtente = document.getElementById("name").value
-                    // PARTE 1
-
-                                      // PARTE 2
-
-
-console.log('nome utente', document.getElementById("name").value);
+const discountOver = 0.4
 
 
 buttonGenerator.addEventListener("click" , function(){
     //
     console.log(nomeUtente.value);
     console.log(kmDaPercorrere.value);
-    console.log(userAge.value);
+    console.log(userAge.value , "userAge.value");
+    console.log(userAge , "userAge");
     console.log(kmDaPercorrere.value * basePrice , "prezzo senza sconto");
     const price = kmDaPercorrere.value * basePrice
     console.log(price);
-    console.log(price - (price * 0.2) , "sconto minorenne");
-    console.log(price - (price * 0.4) , "sconto over60");
+
+    const scontoMinorenne = (price - price * discount)
+    const scontoOver = (price - price * discountOver)
+
+    if (userAge.value < 18){
+        console.log(scontoMinorenne.toFixed(2) , "applicato sconto minorenne");
+
+    } else if (userAge.value > 65){
+        console.log(scontoOver.toFixed(2) , "applicato sconto over65");
+    } 
 }) 
 
 
- /*buttonGenerator.addEventListener("click" , function(){
-    //
-    if (userAge > "65"){
-        let ticketNoDiscount = (ticketNoDiscount.value - ticketNoDiscount.value / 100 * 40)
-        console.log(ticketNoDiscount);
-    }
-}) */
-
-
-
-
-// buttonGenerator.addEventListener("click", function () {
-    //Codice da eseguire qui
-  //  console.log(userName.value);
-    //console.log(priceNoDiscount.value);
-    //console.log(userAge.value);
-
- //})
