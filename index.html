@@ -6,13 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto Treno</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
-<body>
-     
-    <input id="name" type="text" value="nome" >
-    <input id="km" type="text" value="km">
-    <input id="age" type="text" value="anni">
-    <button id="genera">Genera il biglietto</button>
+<body id="bg_body">
+    <div class="container text-center p-5 ">
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    </div>
+
+    <div class="container text-center bg_light rounded">
+        <div class="row">
+            <div class="col">
+                <div class="p-3">Nome Cognome</div>
+                <input class="text-center rounded" id="name" type="text" value="" >
+            </div>
+            <div class="col">
+                <div class="p-3">Km da percorrere</div>
+                <input class="text-center rounded" id="km" type="text" value="">
+            </div>
+            <div class="col">
+                <div class="p-3">Età</div>
+                <input class="text-center rounded" id="age" type="text" value="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 pt-5 pb-4">
+                <button class="rounded p-2 fw-semibold" id="genera">Genera il biglietto</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center p-5 ">
+        <h1>IL TUO BIGLIETTO</h1>
+    </div>
+
+    <div class="container bg_light">
+        <div class="row">
+            <div class="col text-start">
+                <h2>Dettaglio passeggeri</h2>
+            </div>
+        </div>
+        <div class="row border_tb">
+            <div class="col">
+                <div>Nome</div>
+                <div>Passeggero</div>
+                <div id="nome_del_passeggero"></div>
+            </div>
+            <div class="col">
+                <div>Offerta</div>
+                <div id="tipo_sconto"></div>
+            </div>
+            <div class="col">
+                <div>Carrozza</div>
+                <div id="numero_carrozza"></div>
+            </div>
+            <div class="col">
+                <div></div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+
+
 
     <div class="passeggero">
         nome passeggero
@@ -27,6 +82,13 @@
     </div>
 
 
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

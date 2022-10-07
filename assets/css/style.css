@@ -4,12 +4,29 @@
     margin: 0;
 }
 
-body {
-    background-color: black;
+#bg_body {
+    background-color: brown;
+}
+
+.bg_light{
+    background-color: white;
+}
+
+h1 {
+    color: white;
 }
 
 .passeggero,
 .offerta,
 .biglietto{
     background-color: white;
+}
+
+input {
+    border-color: red;
+}
+
+.border_tb{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
